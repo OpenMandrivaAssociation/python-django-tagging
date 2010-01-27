@@ -1,9 +1,8 @@
-%define alphatag r154
 %define realname django-tagging
 
 Name:           python-django-tagging
-Version:        0.3
-Release:        20080217svn%{alphatag}.%mkrel 2
+Version:        0.3.1
+Release:        %mkrel 1
 Summary:        A generic tagging application for Django projects
 
 Group:          Development/Python
@@ -11,7 +10,7 @@ License:        MIT
 URL:            http://code.google.com/p/django-tagging/
 # svn export -r154 http://django-tagging.googlecode.com/svn/trunk/ django-tagging-0.3-r154
 # tar zcf django-tagging-0.3-r154.tar.gz django-tagging-0.3-r154
-Source0:        %{realname}-%{version}-%{alphatag}.tar.gz
+Source0:        http://django-tagging.googlecode.com/files/%{realname}-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 BuildArch:      noarch
@@ -24,7 +23,7 @@ of a number of tags with any Model instance and makes retrieval of tags
 simple.
 
 %prep
-%setup -q -n %{realname}-%{version}-%{alphatag}
+%setup -q -n %{realname}-%{version}
 
 %build
 %{__python} setup.py build
