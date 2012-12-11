@@ -11,8 +11,6 @@ URL:            http://code.google.com/p/django-tagging/
 # svn export -r154 http://django-tagging.googlecode.com/svn/trunk/ django-tagging-0.3-r154
 # tar zcf django-tagging-0.3-r154.tar.gz django-tagging-0.3-r154
 Source0:        http://django-tagging.googlecode.com/files/%{realname}-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-
 BuildArch:      noarch
 BuildRequires:  python-devel
 Requires:       python-django
@@ -30,13 +28,8 @@ simple.
 
 
 %install
-rm -rf $RPM_BUILD_ROOT
 %{__python} setup.py install -O1 --skip-build --root $RPM_BUILD_ROOT
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
-%defattr(-,root,root,-)
 %doc CHANGELOG.txt LICENSE.txt README.txt docs/
 %{py_puresitedir}/*
