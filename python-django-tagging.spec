@@ -2,7 +2,7 @@
 
 Name:           python-django-tagging
 Version:        0.3.1
-Release:        %mkrel 2
+Release:        3
 Summary:        A generic tagging application for Django projects
 
 Group:          Development/Python
