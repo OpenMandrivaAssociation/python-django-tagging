@@ -7,7 +7,7 @@ Summary:        A generic tagging application for Django projects
 
 Group:          Development/Python
 License:        MIT
-URL:            http://code.google.com/p/django-tagging/
+URL:            https://code.google.com/p/django-tagging/
 # svn export -r154 http://django-tagging.googlecode.com/svn/trunk/ django-tagging-0.3-r154
 # tar zcf django-tagging-0.3-r154.tar.gz django-tagging-0.3-r154
 Source0:        http://django-tagging.googlecode.com/files/%{realname}-%{version}.tar.gz
